@@ -263,7 +263,7 @@ section #hero {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    margin-top: 105px; /* Adjust for fixed header */
+    margin-top: 85px; /* Adjust for fixed header */
 }
 
 #hero::before {
@@ -273,7 +273,7 @@ section #hero {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('./assets/personal.png'); /* Placeholder image */
+    background-image: url('./assets/hero.png'); /* Placeholder image */
     background-size: cover;
     background-position: top;
     opacity: 0.1; /* Subtle overlay */
