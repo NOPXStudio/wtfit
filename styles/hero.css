@@ -73,7 +73,18 @@ section #hero {
 }
 
 .hero-text-content {
-    max-width: 600px; /* Limit width of text content */
-    margin: 10px 20px; /* Add horizontal margin */
+    max-width: 600px; 
+    margin: 10px 20px; 
     order: 2;
+}
+
+@media (min-width: 1024px) {
+    #hero .hero-content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-text-content {
+        order: unset;
+    }
 }

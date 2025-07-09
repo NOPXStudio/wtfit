@@ -48,3 +48,9 @@
     font-weight: 600;
     color: #FFCC29;
 }
+
+@media (min-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}

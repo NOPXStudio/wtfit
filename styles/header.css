@@ -1,5 +1,5 @@
 header {
-    background-color: var(--background-color);
+    background-color: #141414;
     position: fixed;
     width: 100%;
     top: 0;
@@ -23,21 +23,21 @@ header button{
     height: 30px;
 }
 
-/* Desktop Navigation - Hidden by default on small screens, shown on large */
+.desktop {
+    display: none;
+}
+
 .desktop-nav {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: none; /* Hidden by default for mobile */
+    display: none; 
 }
 
-.desktop-nav li {
-    margin-left: 30px;
-}
 
 .desktop-nav li a {
-    color: #FFFFFF;
-    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--text-color);
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -49,7 +49,7 @@ header button{
 
 /* Hamburger Menu (jonsuh.com/hamburgers) */
 .hamburger {
-    display: inline-block; /* Shown by default for mobile */
+    display: inline-block; 
     cursor: pointer;
     transition-property: opacity, filter;
     transition-duration: 0.15s;
@@ -166,4 +166,18 @@ header button{
 
 .mobile-menu li a:hover {
     background-color: #333333;
+}
+
+@media (min-width: 1024px) {
+    .desktop {
+        display: block;
+    }
+
+    #mobileMenu, .mobile, .hamburger {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex;
+    }
 }

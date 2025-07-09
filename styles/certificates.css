@@ -1,10 +1,17 @@
 #certificates {
     background-color: transparent;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--spacing-lg);
-    padding: 0;
+}
+
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: var(--spacing-lg);
+  max-width: 500px;
 }
 
 .card-container {
@@ -75,4 +82,17 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .cards-wrapper{
+    max-width: 1200px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card-container{
+    min-width: 300px;
+    height: 420px;
+    margin-bottom: 5rem;
+  }
 }

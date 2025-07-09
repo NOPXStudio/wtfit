@@ -24,7 +24,7 @@
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: var(--spacing-lg) var(--spacing-sm);
 }
@@ -34,7 +34,7 @@ section {
     text-align: center;
     border-radius: 10px;
     margin: 20px auto;
-    max-width: 95%;
+    max-width: 98%;
 }
 
 .button {

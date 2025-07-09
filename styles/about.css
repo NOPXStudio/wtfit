@@ -30,3 +30,10 @@
     margin-bottom: 15px;
     color: #FFD700;
 }
+
+@media (min-width: 1024px) {
+    .how-it-works-grid {
+        grid-template-columns: repeat(3, 1fr);
+;
+    }
+}
